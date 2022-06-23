@@ -16,63 +16,50 @@
     <h2 class="logo">Eidryel2</h2>
 
 
-   
+
     <ul class="menu">
       <a href="index.html">Home</a>
     </ul>
   </nav>
-  <h1> Contato</h1>
+  
+
+  <h1 >Contato</h1>
+
+  <div class="container">
+    <div>
+      <form>
+        <label for="nome">Nome:</label> <br>
+        <input type="text" id="nome" onkeyup="validarNome()">
+        <div id="TxtNome"></div>
+        <br>
+        <label for="email">E-mail:</label> <br>
+        <input type="email" id="email" onkeyup="validarEmail()">
+        <div id="TxtEmail"></div>
+        <br>
+        <label for="assunto">Assunto:</label> <br>
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup='validarAssunto()'></textarea>
+        <div id="TxtAssunto"></div>
+        <br>
+        <button onclick="Enviar()">Enviar</button>
+      </form>
+    </div>
+
+    <div class="mapas">
+
+      <h2>Endereço</h2>
+
+      <p>Av. 9 de Abril</p>
+      <p>Cubatão  - SP</p>
+
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d116755.3861806856!2d-46.479007!3d-23.8681272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1a0b772433e9%3A0xdc9d19c810900e3a!2zRXN0YcOnw6NvIEN1YmF0w6Nv!5e0!3m2!1spt-BR!2sbr!4v1655920328369!5m2!1spt-BR!2sbr"
+        width="400" height="300"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" 
+        onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
+      
 
 
-<div class="container">
-
-  <div>
-    <form>
-      <label for="nome">Nome</label><br>
-      <input type="text" id="nome">
-  
-      <br>
-      <br>
-      <label for="nome">E-mail</label><br>
-      <input type="text" id="e-mail">
-  
-      <br>
-      <br>
-      <label for="nome">Assunto</label><br>
-      <textarea name="assunto" id="assunto" cols="10" rows="05"></textarea>
-  
-      <br>
-      <br>
-      <a href="#"></a><i class="fa-solid fa-envelopes"></i>
-      <button>Enviar</button>
-      <br>
-   
+    </div>
   </div>
-</div>
- 
-
-  </form>
-
-  
-    
- 
-
-  <h2>Endereço</h2>
-
-<div class="container"> 
-
-
-  <div>
-    <iframe
-  
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d116755.3861806856!2d-46.479007!3d-23.8681272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1a0b772433e9%3A0xdc9d19c810900e3a!2zRXN0YcOnw6NvIEN1YmF0w6Nv!5e0!3m2!1spt-BR!2sbr!4v1655920328369!5m2!1spt-BR!2sbr"
-    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-  </div>
-</div>
-  <p> cubatão, SP</p>
- 
 
   <footer>
     <div class="footer-container">
@@ -90,6 +77,8 @@
 
 
   </footer>
+
+  <script src="script/script.js"></script>
 </body>
 
 </html>
